@@ -29,6 +29,8 @@ fireworks = initialize_portkey()
 
 # Streamlit app
 st.title("Synthetic Data Generation App")
+# Display smaller text below the title
+st.markdown("<small>Made By BuildFastWithAI</small>", unsafe_allow_html=True)
 
 # User inputs
 language = st.selectbox("Select language", ["English", "Hindi", "Marathi", "Hinglish", "Telgue"])
@@ -133,13 +135,13 @@ if st.button("Generate Synthetic Data"):
         except Exception as e:
             st.error(f"Error parsing the generated data: {str(e)}")
 
-# Add some instructions for the user
-st.sidebar.header("Instructions")
-st.sidebar.write("""
-1. Select the desired language and number of examples to generate.
-2. Optionally, show and edit the general prompt by checking the box.
-3. Add any additional custom instructions in the optional field.
-4. Click the 'Generate Synthetic Data' button to create conversations.
-5. Review the generated conversations displayed on the page.
-6. Download the data as JSON or CSV using the provided buttons.
-""")
+# # Add some instructions for the user
+# st.sidebar.header("Instructions")
+# st.sidebar.write("""
+# 1. Select the desired language and number of examples to generate.
+# 2. Optionally, show and edit the general prompt by checking the box.
+# 3. Add any additional custom instructions in the optional field.
+# 4. Click the 'Generate Synthetic Data' button to create conversations.
+# 5. Review the generated conversations displayed on the page.
+# 6. Download the data as JSON or CSV using the provided buttons.
+# """)
