@@ -29,8 +29,17 @@ fireworks = initialize_portkey()
 
 # Streamlit app
 st.title("Synthetic Data Generation App")
-# Display smaller text below the title
-st.markdown("<small>Made By BuildFastWithAI</small>", unsafe_allow_html=True)
+
+# Display smaller text aligned to the left of the title
+st.markdown(
+    """
+    <div style='display: flex; justify-content: space-between; align-items: center;'>
+        <h1>Synthetic Data Generation App</h1>
+        <small style='margin-left: auto;'>Made By BuildFastWithAI</small>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 
 # User inputs
 language = st.selectbox("Select language", ["English", "Hindi", "Marathi", "Hinglish", "Telgue"])
