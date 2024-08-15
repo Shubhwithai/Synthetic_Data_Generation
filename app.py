@@ -30,12 +30,11 @@ fireworks = initialize_portkey()
 # Streamlit app
 st.title("Synthetic Data Generation App")
 
-# Display smaller text aligned to the left of the title
+# Align smaller text directly underneath and to the right
 st.markdown(
     """
-    <div style='display: flex; justify-content: space-between; align-items: center;'>
-        <h1>Synthetic Data Generation App</h1>
-        <small style='margin-left: auto;'>Made By BuildFastWithAI</small>
+    <div style='text-align: right;'>
+        <small>Made By BuildFastWithAI</small>
     </div>
     """, 
     unsafe_allow_html=True
