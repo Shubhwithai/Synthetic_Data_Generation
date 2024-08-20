@@ -25,7 +25,7 @@ st.markdown(
     """
     <h1 style='text-align: center;'>
         <a href='https://portkey.ai/' style='text-decoration: none; color: inherit;'>
-            Synthetic Data Generation with Portkey
+            Synthetic Data Gen with Portkey
         </a>
     </h1>
     """,
